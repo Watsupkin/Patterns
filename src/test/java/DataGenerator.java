@@ -1,11 +1,9 @@
 import com.github.javafaker.Faker;
-import com.github.javafaker.PhoneNumber;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Formatter;
 import java.util.Locale;
 
 public class DataGenerator {
