@@ -40,7 +40,7 @@ public class CardDeliveryWithNewDate {
                 .shouldBe(Condition.visible, Duration.ofMillis(6000));
         $("[data-test-id='success-notification'] > .notification__content")
                 .shouldHave(text("Встреча успешно запланирована на " + user.getDate()))
-                .shouldBe(Condition.visible, Duration.ofMillis(6000));
+                .shouldBe(Condition.visible, Duration.ofMillis(15000));
         $("[placeholder='Дата встречи']").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         $("[placeholder='Дата встречи']").setValue(user.getNewDate());
         $(withText("Запланировать")).click();
